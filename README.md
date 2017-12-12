@@ -8,6 +8,8 @@ I'm writing these with myself in mind, but am trying to write them in a way that
 
 ## Install Process
 
+If you don't know what crouton is, refer to [the repository here](https://github.com/dnschneid/crouton). No really, check it out. It's awesome.
+
 Open the terminal and run `sudo sh ~/Downloads/crouton -t xfce-desktop`
 
 Once installation is complete enter the new chroot with `sudo startxfce4`
