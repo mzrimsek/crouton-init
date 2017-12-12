@@ -15,3 +15,9 @@ Once installation is complete enter the new chroot with `sudo startxfce4`
 Run `package-install.sh` - `<COMMAND>`
 
 Run `git-init.sh` - `<COMMAND>`
+
+## Start Clean!
+
+Go full scorched earth, delete everything, and start from scratch! That's what these scripts were made for!
+
+`cd /usr/local/chroots && sudo delete-chroot -y * && sudo rm -rf /usr/local/bin`
