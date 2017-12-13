@@ -14,9 +14,9 @@ Open the terminal and run `sudo sh ~/Downloads/crouton -t xfce-desktop`
 
 Once installation is complete enter the new chroot with `sudo startxfce4`
 
-Run `package-install.sh` - `<COMMAND>`
+Run `package-install.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/package-install.sh -O - | sudo sh`
 
-Run `git-init.sh` - `<COMMAND>`
+Run `git-init.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/git-init.sh && ./git-init <github_user> <github_token> <email> <full name> && rm git-init.sh`
 
 ## Start Clean!
 
