@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.renderLineHighlight": "all",
+    "files.autoSave": "onFocusChange",
+    "git.enableSmartCommit": true,
+    "tslint.autoFixOnSave": true,
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none"
+}

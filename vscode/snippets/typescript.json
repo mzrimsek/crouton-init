@@ -1,0 +1,64 @@
+{
+    "Create ngrx reducer": {
+        "prefix": "ngrxr",
+        "body": [
+            "import { Action } from '@ngrx/store';",
+            "import { EntityState, EntityAdapter, createEntityAdapter } from '@ngrx/entity';",
+            "",
+            "export interface ${1:EntityType} {",
+            "}",
+            "",
+            "export interface State extends EntityState<${1:EntityType}> { }",
+            "",
+            "export const adapter: EntityAdapter<${1:EntityType}> = createEntityAdapter<${1:EntityType}>();",
+            "const initialState: State = adapter.getInitialState();",
+            "",
+            "export function reducer(state: State = initialState, action: Action): State {",
+            "  switch (action.type) {",
+            "    default: {",
+            "      return state;",
+            "    }",
+            "  }",
+            "}",
+            ""
+        ],
+        "description": "Create ngrx reducer"
+    },
+    "Create ngrx root reducer": {
+        "prefix": "ngrxrr",
+        "body": [
+            "import { ActionReducerMap, createFeatureSelector, createSelector } from '@ngrx/store';",
+            "",
+            "export interface ${1:FeatureName}State {",
+            "}",
+            "",
+            "export interface State {",
+            "  ${2:featureName}: ${1:FeatureName}State;",
+            "}",
+            "",
+            "export const reducers: ActionReducerMap<${1:FeatureName}State> = {",
+            "};",
+            "",
+            "export const _select${1:FeatureName}Feature = createFeatureSelector<${1:FeatureName}State>('${2:featureName}');",
+            "",
+            "const ${2:featureName}ComponentSelectors = {",
+            "};",
+            "",
+            "export default ${2:featureName}ComponentSelectors;",
+            ""
+        ],
+        "description": "Create ngrx root reducer"
+    },
+    "Create ngrx action": {
+        "prefix": "ngrxa",
+        "body": [
+            "export const ${1:ACTION_TYPE} = '${2:Message}';",
+            "export class ${3:Class} implements Action {",
+            "  readonly type = ${1:ACTION_TYPE};",
+            "  constructor(${4:}) { }",
+            "}",
+            ""
+        ],
+        "description": "Create ngrx action"
+    }
+}
