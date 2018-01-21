@@ -6,17 +6,27 @@ Instead of manually installing and reconfiguring packages, I am aiming to make s
 
 I'm writing these with myself in mind, but am trying to write them in a way that may be beneficial for others as well.
 
+With that in mind most of these scripts will be very opinionated toward my own usage.
+
 ## Install Process
 
-If you don't know what crouton is, refer to [the repository here](https://github.com/dnschneid/crouton). No really, check it out. It's awesome.
+1. If you don't know what crouton is, refer to [the repository here](https://github.com/dnschneid/crouton). No really, check it out. It's awesome.
 
-Open the terminal and run `sudo sh ~/Downloads/crouton -t xfce-desktop`
+2. Open the terminal and run `sudo sh ~/Downloads/crouton -t xfce-desktop`
 
-Once installation is complete enter the new chroot with `sudo startxfce4`
+3. Once installation is complete enter the new chroot with `sudo startxfce4`
 
-Run `package-install.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/package-install.sh -O - | sudo sh`
+4. Run `package-install.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/package-install.sh -O - | sudo sh`
 
-Run `git-init.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/git-init.sh && ./git-init <github_user> <github_token> <email> <full name> && rm git-init.sh`
+## Additional Configuration
+
+### Git
+
+* Run `git-init.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/git-init.sh && ./git-init <github_user> <github_token> <email> <full name> && rm git-init.sh`
+
+### Visual Studio Code
+
+* Run `vscode-init.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/vscode-init.sh -O - | sh`
 
 ## Start Clean!
 
