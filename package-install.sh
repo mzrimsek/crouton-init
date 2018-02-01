@@ -73,5 +73,5 @@ fi
 apt update
 
 # install packages
-apt install -y vim git nodejs code dotnet-sdk-2.0.3 openjdk-8-jdk postgresql postgresql-contrib pgadmin3
+apt install -y vim git nodejs code dotnet-sdk-2.1.4 openjdk-8-jdk postgresql postgresql-contrib pgadmin3
 npm install -g npm
