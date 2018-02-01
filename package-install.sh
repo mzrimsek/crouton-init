@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GO_VER=1.9.2.linux-amd64
+GO_VER=1.9.3.linux-amd64
 
 # dependencies
 apt install -y curl
