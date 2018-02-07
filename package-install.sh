@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GO_VER=1.9.2.linux-amd64
+GO_VER=1.9.3.linux-amd64
 
 # dependencies
 apt install -y curl
@@ -73,5 +73,5 @@ fi
 apt update
 
 # install packages
-apt install -y vim git nodejs code dotnet-sdk-2.0.3 openjdk-8-jdk postgresql postgresql-contrib pgadmin3
+apt install -y vim git nodejs code dotnet-sdk-2.1.4 openjdk-8-jdk postgresql postgresql-contrib pgadmin3
 npm install -g npm
