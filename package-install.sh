@@ -1,6 +1,7 @@
 #!/bin/bash
 
 GO_VER=1.9.3.linux-amd64
+DOTNET_VER=2.1.4
 
 # dependencies
 apt install -y curl
@@ -64,14 +65,34 @@ if [ "$GO_BIN" = "" ]; then
   rm go${GO_VER}.tar.gz
   
   echo "export PATH=$PATH:/usr/local/go/bin" >> $HOME/.profile
-  echo "Restart required for go installation..."
 else
   echo "go already installed..."
+fi
+
+# mongodb
+MONGO_BIN=$(which mongod)
+if [ "$MONGO_BIN" = "" ]; then
+  echo "Adding mongodb PPA..."
+  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
+else
+  echo "MongoDB PPA already added"
+fi
+
+# dart
+DART_BIN=$(which dart)
+if [ "$DART_BIN" = "" ]; then
+  echo "Adding dart PPA..."
+  sudo sh -c 'curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
+  sudo sh -c 'curl https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list'
+  echo "export PATH=/usr/lib/dart/bin:$PATH" >> $HOME/.profile
+else
+  echo "dart already installed"
 fi
 
 # update package sources
 apt update
 
 # install packages
-apt install -y vim git nodejs code dotnet-sdk-2.1.4 openjdk-8-jdk postgresql postgresql-contrib pgadmin3
+apt install -y vim git nodejs code dotnet-sdk-${DOTNET_VER} openjdk-8-jdk postgresql postgresql-contrib pgadmin3 mongodb-org dart
 npm install -g npm
