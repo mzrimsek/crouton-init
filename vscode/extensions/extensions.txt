@@ -1,5 +1,6 @@
 Angular.ng-template
 CoenraadS.bracket-pair-colorizer
+Dart-Code.dart-code
 EditorConfig.EditorConfig
 PKief.material-icon-theme
 akamud.vscode-theme-onedark
