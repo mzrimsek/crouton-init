@@ -25,7 +25,7 @@ cd extensions
 
 GIT_STATUS=$(git status --short)
 if [ "$GIT_STATUS" != "" ]; then
-  git commit -am "Update extensions"
+  git commit -am "Update vscode settings"
   git push
 fi
 
