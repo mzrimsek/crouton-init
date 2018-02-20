@@ -22,11 +22,15 @@ With that in mind most of these scripts will be very opinionated toward my own u
 
 ### Git
 
-* Run `git-init.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/git-init.sh && ./git-init <github_user> <github_token> <email> <full name> && rm git-init.sh`
+* Run `git-init.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/git-init.sh -O - | sh -s <github_user> <github_token> <email> <full name>`
 
 ### Visual Studio Code
 
 * Run `vscode-init.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/vscode-init.sh -O - | sh`
+
+#### Backup Settings
+
+* Run `vscode-init.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/vscode-init.sh -O - | sh -s b`
 
 ## Start Clean!
 
