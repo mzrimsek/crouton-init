@@ -2,7 +2,6 @@
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "editor.renderLineHighlight": "all",
-    "explorer.confirmDelete": false,
     "files.autoSave": "onFocusChange",
     "git.autofetch": true,
     "git.confirmSync": false,
