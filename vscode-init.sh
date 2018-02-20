@@ -15,13 +15,40 @@ cd $TEMP_DIR
 git clone https://github.com/mzrimsek/crouton-init.git
 cd crouton-init/vscode
 
-# restore user settings and snippets
-mv settings.json $HOME/.config/Code/User
-mv snippets/typescript.json $HOME/.config/Code/User/snippets
+if [ "$#" -le 1 ]; then
+    if [ "$1" = "" ] || [ "$1" = "r" ]; then
+        echo "Restoring..."
 
-# restore extensions
-cd extensions
-./restore-extensions.sh
+        # restore user settings and snippets
+        mv settings.json $HOME/.config/Code/User
+        mv snippets/typescript.json $HOME/.config/Code/User/snippets
+
+        # restore extensions
+        cd extensions
+        ./restore-extensions.sh
+    elif [ "$1" = "b" ]; then
+        echo "Backing up..."
+
+        # backup user settings and snippets
+        cp $HOME/.config/Code/User/settings.json settings.json
+        cp $HOME/.config/Code/User/snippets/typescript.json snippets/typescript.json
+
+        # backup extensions
+        cd extensions
+        ./backup-extensions.sh
+
+        GIT_STATUS=$(git status --short)
+        if [ "$GIT_STATUS" != "" ]; then
+          git commit -am "Update vscode settings"
+          git push
+        fi
+    else
+        echo "Invalid option"
+        echo "Valid options are 'build' (default) and 'run'"
+    fi
+else
+    echo "Too many arguments"
+fi
 
 # clean up
 cd $HOME
