@@ -16,7 +16,7 @@ With that in mind most of these scripts will be very opinionated toward my own u
 
 3. Once installation is complete enter the new chroot with `sudo startxfce4`
 
-4. Run `package-install.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/package-install.sh -O - | sudo sh`
+4. Run `package-install.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/package-install.sh -O - | sudo -E env "PATH=$PATH" sh`
 
 ## Additional Configuration
 

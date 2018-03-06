@@ -82,12 +82,29 @@ else
   echo "dart already installed"
 fi
 
+# yarn
+YARN_BIN=$(which yarn)
+if [ "$YARN_BIN" = "" ]; then
+  echo "Adding yarn PPA..."
+  curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+  echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+else
+  echo "yarn already installed"
+fi
+
 # update path
-echo "export PATH=$NEW_PATH" >> $HOME/.profile
+if [ "$PATH" != "$NEW_PATH" ]; then
+  echo "Updating PATH..."
+  echo "export PATH=$NEW_PATH" >> $HOME/.profile
+else
+  echo "No PATH changes to make..."
+fi
 
 # update package sources
 apt update
 
 # install packages
-apt install -y vim git nodejs code dotnet-sdk-${DOTNET_VER} openjdk-8-jdk postgresql postgresql-contrib pgadmin3 dart
-npm install -g npm
+apt install -y vim git nodejs code dotnet-sdk-${DOTNET_VER} openjdk-8-jdk postgresql postgresql-contrib pgadmin3 dart yarn
+
+# install npm packages
+npm install -g npm @angular/cli create-react-app
