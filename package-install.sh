@@ -107,4 +107,4 @@ apt update
 apt install -y vim git nodejs code dotnet-sdk-${DOTNET_VER} openjdk-8-jdk postgresql postgresql-contrib pgadmin3 dart yarn
 
 # install npm packages
-npm install -g npm @angular/cli create-react-app
+npm install -g npm @angular/cli create-react-app @vue/cli license-generator
