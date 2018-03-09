@@ -3,15 +3,15 @@
     "editor.minimap.enabled": false,
     "editor.renderLineHighlight": "all",
     "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
     "files.autoSave": "onFocusChange",
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
+    "gitlens.keymap": "alternate",
     "html.format.wrapAttributes": "force-aligned",
     "tslint.autoFixOnSave": true,
     "workbench.colorTheme": "Atom One Dark",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "none",
-    "gitlens.keymap": "alternate",
-    "explorer.confirmDragAndDrop": false
+    "workbench.startupEditor": "none"
 }
