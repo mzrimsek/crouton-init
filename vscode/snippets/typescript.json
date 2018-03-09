@@ -60,5 +60,30 @@
             ""
         ],
         "description": "Create ngrx action"
+    },
+    "Create ngrx effects class": {
+        "prefix": "ngrxec",
+        "body": [
+            "import { Injectable } from '@angular/core';",
+            "import { Actions, Effect } from '@ngrx/effects';",
+            "import 'rxjs/add/operator/map';",
+            "import 'rxjs/add/operator/switchMap';",
+            "import 'rxjs/add/operator/mergeMap';",
+            "",
+            "@Injectable()",
+            "export class ${1:Class}Effects {",
+            "",
+            "  constructor(private actions$: Actions) { }",
+            "}",
+            ""
+        ]
+    },
+    "Create ngrx effect": {
+        "prefix": "ngrxe",
+        "body": [
+            "@Effect() ${1:effect}$ =",
+            "  this.actions$",
+            "    .ofType();"
+        ]
     }
 }
