@@ -20,6 +20,10 @@ With that in mind most of these scripts will be very opinionated toward my own u
 
 ## Additional Configuration
 
+### NPM
+
+* Run 'npm-install.sh" - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/npm-install.sh -O - | sudo sh`
+
 ### Git
 
 * Run `git-init.sh` - `wget https://raw.githubusercontent.com/mzrimsek/crouton-init/master/git-init.sh -O - | sh -s <github_user> <github_token> <email> <full name>`
