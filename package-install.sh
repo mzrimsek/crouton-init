@@ -79,7 +79,7 @@ if [ "$DART_BIN" = "" ]; then
 
   NEW_PATH=$NEW_PATH:/usr/lib/dart/bin
 else
-  echo "dart already installed"
+  echo "dart already added"
 fi
 
 # yarn
@@ -89,7 +89,7 @@ if [ "$YARN_BIN" = "" ]; then
   curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
   echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 else
-  echo "yarn already installed"
+  echo "yarn already added"
 fi
 
 # update path
