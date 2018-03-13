@@ -1,11 +1,11 @@
 Angular.ng-template
 Dart-Code.dart-code
 EditorConfig.EditorConfig
-PKief.material-icon-theme
 akamud.vscode-theme-onedark
 eamodio.gitlens
 eg2.tslint
 lukehoban.Go
 ms-vscode.csharp
 msjsdiag.debugger-for-chrome
+robertohuertasm.vscode-icons
 xabikos.JasmineSnippets
