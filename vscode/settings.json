@@ -10,8 +10,18 @@
     "git.enableSmartCommit": true,
     "gitlens.keymap": "alternate",
     "html.format.wrapAttributes": "force-aligned",
+    "material-icon-theme.files.associations": {
+        "*.actions.ts": "ngrx-actions",
+        "*.effects.ts": "ngrx-effects",
+        "*.reducer.ts": "ngrx-reducer"
+    },
+    "material-icon-theme.folders.associations": {
+        "actions": "ngrx-actions",
+        "effects": "ngrx-effects",
+        "reducers": "ngrx-reducer"
+    },
     "tslint.autoFixOnSave": true,
     "workbench.colorTheme": "Atom One Dark",
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none"
 }
