@@ -3,6 +3,7 @@ CoenraadS.bracket-pair-colorizer
 Dart-Code.dart-code
 EditorConfig.EditorConfig
 PKief.material-icon-theme
+Zignd.html-css-class-completion
 akamud.vscode-theme-onedark
 eamodio.gitlens
 eg2.tslint

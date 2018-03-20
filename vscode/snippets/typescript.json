@@ -76,7 +76,8 @@
             "  constructor(private actions$: Actions) { }",
             "}",
             ""
-        ]
+        ],
+        "description": "Create ngrx effects class"
     },
     "Create ngrx effect": {
         "prefix": "ngrxe",
@@ -84,6 +85,29 @@
             "@Effect() ${1:effect}$ =",
             "  this.actions$",
             "    .ofType();"
-        ]
+        ],
+        "description": "Create ngrx effect"
+    },
+    "Create feature routes": {
+        "prefix": "ngfr",
+        "body": [
+            "import { NgModule } from '@angular/core';",
+            "import { RouterModule, Routes } from '@angular/router';",
+            "",
+            "const ${1:feature}Routes: Routes = [",
+            "];",
+            "",
+            "@NgModule({",
+            "  imports: [",
+            "    RouterModule.forChild(${1:feature}Routes)",
+            "  ],",
+            "  exports: [",
+            "    RouterModule",
+            "  ]",
+            "})",
+            "export class ${2:Feature}RoutingModule { }",
+            ""
+        ],
+        "description": "Create feature routes"
     }
 }
