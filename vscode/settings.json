@@ -10,6 +10,57 @@
     "git.enableSmartCommit": true,
     "gitlens.keymap": "alternate",
     "html.format.wrapAttributes": "force-aligned",
+    "importSorter.generalConfiguration.sortOnBeforeSave": true,
+    "importSorter.sortConfiguration.customOrderingRules.rules": [
+        {
+            "regex": "^@angular",
+            "orderLevel": 0,
+        },
+        {
+            "regex": "^[@]",
+            "orderLevel": 10
+        },
+        {
+            "regex": "([.]module)",
+            "orderLevel": 21
+        },
+        {
+            "regex": "([.]component)",
+            "orderLevel": 22
+        },
+        {
+            "regex": "([.]effects)",
+            "orderLevel": 23
+        },
+        {
+            "regex": "([.]service)",
+            "orderLevel": 24
+        },
+        {
+            "regex": "([.]guard)",
+            "orderLevel": 25
+        },
+        {
+            "regex": "([.]actions)",
+            "orderLevel": 26
+        },
+        {
+            "regex": "([.]reducer)",
+            "orderLevel": 27
+        },
+        {
+            "regex": "(models)",
+            "orderLevel": 28
+        },
+        {
+            "regex": "([.]utils)",
+            "orderLevel": 28
+        },
+        {
+            "regex": "^[.]",
+            "orderLevel": 30
+        }
+    ],
     "material-icon-theme.files.associations": {
         "*.actions.ts": "ngrx-actions",
         "*.effects.ts": "ngrx-effects",

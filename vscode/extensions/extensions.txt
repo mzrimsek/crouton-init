@@ -8,6 +8,7 @@ akamud.vscode-theme-onedark
 eamodio.gitlens
 eg2.tslint
 lukehoban.Go
+mike-co.import-sorter
 ms-vscode.csharp
 msjsdiag.debugger-for-chrome
 xabikos.JasmineSnippets
