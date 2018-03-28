@@ -54,7 +54,7 @@
         },
         {
             "regex": "([.]utils)",
-            "orderLevel": 28
+            "orderLevel": 29
         },
         {
             "regex": "^[.]",
