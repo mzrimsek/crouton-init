@@ -41,24 +41,28 @@
             "orderLevel": 25
         },
         {
-            "regex": "([.]actions)",
+            "regex": "([.]pipe)",
             "orderLevel": 26
         },
         {
-            "regex": "([.]reducer)",
+            "regex": "([.]actions)",
             "orderLevel": 27
         },
         {
-            "regex": "(models)",
+            "regex": "([.]reducer)",
             "orderLevel": 28
         },
         {
-            "regex": "([.]utils)",
+            "regex": "(models)",
             "orderLevel": 29
         },
         {
-            "regex": "^[.]",
+            "regex": "([.]utils)",
             "orderLevel": 30
+        },
+        {
+            "regex": "^[.]",
+            "orderLevel": 40
         }
     ],
     "material-icon-theme.files.associations": {
