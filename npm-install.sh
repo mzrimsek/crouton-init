@@ -36,6 +36,9 @@ install_package vue @vue/cli
 # license-generator
 install_package license-generator license-generator
 
+# firebase
+install_package firebase firebase-tools
+
 # install packages
 if [ "$NPM_PKGS" != "" ]; then
   echo "Installing packages..."
