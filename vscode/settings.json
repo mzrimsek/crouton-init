@@ -8,13 +8,12 @@
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
-    "gitlens.keymap": "chorded",
     "html.format.wrapAttributes": "force-aligned",
     "importSorter.generalConfiguration.sortOnBeforeSave": true,
     "importSorter.sortConfiguration.customOrderingRules.rules": [
         {
             "regex": "^@angular",
-            "orderLevel": 0,
+            "orderLevel": 0
         },
         {
             "regex": "^[@]",
@@ -79,15 +78,5 @@
     "tslint.autoFixOnSave": true,
     "workbench.colorTheme": "Atom One Dark",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "none",
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true
-    }
+    "workbench.startupEditor": "none"
 }
