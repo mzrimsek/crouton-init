@@ -8,7 +8,7 @@
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
-    "gitlens.keymap": "alternate",
+    "gitlens.keymap": "chorded",
     "html.format.wrapAttributes": "force-aligned",
     "importSorter.generalConfiguration.sortOnBeforeSave": true,
     "importSorter.sortConfiguration.customOrderingRules.rules": [
@@ -68,7 +68,8 @@
     "material-icon-theme.files.associations": {
         "*.actions.ts": "ngrx-actions",
         "*.effects.ts": "ngrx-effects",
-        "*.reducer.ts": "ngrx-reducer"
+        "*.reducer.ts": "ngrx-reducer",
+        "*.rules": "firebase"
     },
     "material-icon-theme.folders.associations": {
         "actions": "ngrx-actions",
@@ -78,5 +79,15 @@
     "tslint.autoFixOnSave": true,
     "workbench.colorTheme": "Atom One Dark",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    }
 }
