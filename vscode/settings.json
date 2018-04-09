@@ -12,6 +12,16 @@
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
     "html.format.wrapAttributes": "force-aligned",
     "importSorter.generalConfiguration.sortOnBeforeSave": true,
     "importSorter.sortConfiguration.customOrderingRules.rules": [
@@ -80,17 +90,10 @@
         "reducers": "ngrx-reducer"
     },
     "tslint.autoFixOnSave": true,
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
     "workbench.colorTheme": "Atom One Dark",
+    "workbench.editor.labelFormat": "medium",
+    "workbench.editor.tabSizing": "shrink",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "none",
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
-        "suppressShowKeyBindingsNotice": true
-    }
+    "workbench.startupEditor": "none"
 }
