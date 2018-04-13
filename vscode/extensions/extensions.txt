@@ -4,6 +4,7 @@ Dart-Code.dart-code
 EditorConfig.EditorConfig
 PKief.material-icon-theme
 akamud.vscode-theme-onedark
+donjayamanne.githistory
 eamodio.gitlens
 eg2.tslint
 lukehoban.Go

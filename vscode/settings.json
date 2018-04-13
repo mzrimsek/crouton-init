@@ -95,5 +95,6 @@
     "workbench.editor.labelFormat": "medium",
     "workbench.editor.tabSizing": "shrink",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "window.zoomLevel": 0
 }

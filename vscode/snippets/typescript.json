@@ -29,7 +29,7 @@
         "body": [
             "import { ActionReducerMap, createFeatureSelector, createSelector } from '@ngrx/store';",
             "",
-            "export interface ${1:FeatureName}State {",
+            "interface ${1:FeatureName}State {",
             "}",
             "",
             "export interface State {",
