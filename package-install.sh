@@ -5,7 +5,7 @@ DOTNET_VER=2.1.4
 NEW_PATH=$PATH
 
 # dependencies
-apt install -y curl
+sudo apt-get install -y curl
 
 # git
 GIT_BIN=$(which git)
@@ -101,8 +101,8 @@ else
 fi
 
 # update package sources
-apt update && apt upgrade
+sudo apt-get update && sudo apt-get upgrade
 
 # install packages
 echo "Installing packages..."
-apt install -y vim git nodejs code dotnet-sdk-${DOTNET_VER} openjdk-8-jdk postgresql postgresql-contrib pgadmin3 dart yarn
+sudo apt-get install -y vim git nodejs code dotnet-sdk-${DOTNET_VER} openjdk-8-jdk postgresql postgresql-contrib pgadmin3 dart yarn
