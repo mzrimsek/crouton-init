@@ -105,4 +105,4 @@ sudo apt-get update && sudo apt-get upgrade
 
 # install packages
 echo "Installing packages..."
-sudo apt-get install -y vim git nodejs code dotnet-sdk-${DOTNET_VER} openjdk-8-jdk postgresql postgresql-contrib pgadmin3 dart yarn
+sudo apt-get install -y vim git nodejs code dotnet-sdk-${DOTNET_VER} openjdk-8-jdk postgresql postgresql-contrib pgadmin3 dart yarn direnv
