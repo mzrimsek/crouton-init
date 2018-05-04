@@ -1,4 +1,7 @@
 {
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": false
+    },
     "editor.cursorStyle": "line-thin",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
@@ -89,6 +92,7 @@
         "effects": "ngrx-effects",
         "reducers": "ngrx-reducer"
     },
+    "npm.enableScriptExplorer": true,
     "tslint.autoFixOnSave": true,
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
     "workbench.colorTheme": "Atom One Dark",
