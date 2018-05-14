@@ -1,7 +1,7 @@
 #!/bin/bash
 
-GO_VER=1.9.3.linux-amd64
-DOTNET_VER=2.1.4
+GO_VER=1.10.2.linux-amd64
+DOTNET_VER=2.1.200
 NEW_PATH=$PATH
 
 # dependencies
