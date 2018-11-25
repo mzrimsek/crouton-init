@@ -12,19 +12,15 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "files.autoSave": "onFocusChange",
+    "files.useExperimentalFileWatcher": true,
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
     "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
+        "suppressLineUncommittedWarning": true,
         "suppressShowKeyBindingsNotice": true
     },
+    "gitlens.historyExplorer.enabled": true,
     "html.format.wrapAttributes": "force-aligned",
     "importSorter.generalConfiguration.sortOnBeforeSave": true,
     "importSorter.sortConfiguration.customOrderingRules.rules": [
@@ -94,14 +90,16 @@
         "meta.reducers": "ngrx-reducer"
     },
     "npm.enableScriptExplorer": true,
-    "terminal.integrated.shell.windows": "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "tslint.autoFixOnSave": true,
-    "typescript.updateImportsOnFileMove.enabled": "always",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+    "window.zoomLevel": 0,
     "workbench.colorTheme": "Atom One Dark",
     "workbench.editor.labelFormat": "medium",
     "workbench.editor.tabSizing": "shrink",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
-    "window.zoomLevel": 0
+    "editor.tabSize": 2,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }
