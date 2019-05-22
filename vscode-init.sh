@@ -44,7 +44,7 @@ if [ "$#" -le 1 ]; then
         fi
     else
         echo "Invalid option"
-        echo "Valid options are 'build' (default) and 'run'"
+        echo "Valid options are restore('r') (default) and backup('b')"
     fi
 else
     echo "Too many arguments"
